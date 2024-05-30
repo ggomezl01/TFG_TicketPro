@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TicketPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#D81B2A</item>
+    </style>
+    <style name="Theme.TicketPro" parent="Base.Theme.TicketPro" />
+</resources>

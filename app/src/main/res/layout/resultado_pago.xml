@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pagoIncorrecto"
+        android:layout_width="354dp"
+        android:layout_height="324dp"
+        android:background="@drawable/rectangulo_bordes_redondeados"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnMenuPrincipalI"
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/inter_bold"
+            android:onClick="irAEventos"
+            android:text="Volver al menú principal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.821" />
+
+        <ImageView
+            android:id="@+id/imageView8I"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23000002"
+            app:srcCompat="@drawable/pago_incorrecto" />
+
+        <TextView
+            android:id="@+id/textView9I"
+            android:layout_width="302dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/bebas_neue"
+            android:text="PAGO INCORRECTO"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pagoCorrecto"
+        android:layout_width="354dp"
+        android:layout_height="324dp"
+        android:background="@drawable/rectangulo_bordes_redondeados"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnMenuPrincipalC"
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/inter_bold"
+            android:onClick="irAEventos"
+            android:text="Volver al menú principal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.899" />
+
+        <Button
+            android:id="@+id/btnVerEntradasC"
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/inter_bold"
+            android:onClick="irAEntradas"
+            android:text="Ver mis entradas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.695" />
+
+        <ImageView
+            android:id="@+id/imageView8C"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.113"
+            app:srcCompat="@drawable/pago_correcto" />
+
+        <TextView
+            android:id="@+id/textView9C"
+            android:layout_width="302dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/bebas_neue"
+            android:text="PAGO CORRECTO"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.453" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
