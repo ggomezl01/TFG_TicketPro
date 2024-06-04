@@ -74,86 +74,142 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.52" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="313dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/compraCerrada"
+        android:layout_width="312dp"
         android:layout_height="260dp"
+        android:background="@drawable/rectangulo_bordes_redondeados"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876"
-        app:srcCompat="@drawable/rectangulo_bordes_redondeados" />
+        app:layout_constraintVertical_bias="0.876">
 
-    <Button
-        android:id="@+id/btnCesta"
-        android:layout_width="288dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#D81B2A"
-        android:fontFamily="@font/inter_bold"
-        android:text="Añadir a la cesta"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.943" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="296dp"
+            android:layout_height="102dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="ENTRADAS NO DISPONIBLES"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
 
-    <TextView
-        android:id="@+id/txtPrecio"
-        android:layout_width="264dp"
-        android:layout_height="107dp"
-        android:fontFamily="@font/bebas_neue"
-        android:text="0.0€"
-        android:textAlignment="center"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.137" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="296dp"
+            android:layout_height="102dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Inténtalo de nuevo más tarde o espera a ver si el evento sigue o no activo."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.867" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/txtNumEntradas"
-        android:layout_width="59dp"
-        android:layout_height="58dp"
-        android:fontFamily="@font/bebas_neue"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnCesta"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
-        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/compraAbierta"
+        android:layout_width="312dp"
+        android:layout_height="260dp"
+        android:background="@drawable/rectangulo_bordes_redondeados"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876">
 
-    <ImageButton
-        android:id="@+id/btnRestar"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.63"
-        app:srcCompat="@drawable/restar" />
+        <Button
+            android:id="@+id/btnCesta"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#D81B2A"
+            android:fontFamily="@font/inter_bold"
+            android:text="Añadir a la cesta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnSumar"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.63"
-        app:srcCompat="@drawable/sumar" />
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="264dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="132dp"
+            android:fontFamily="@font/bebas_neue"
+            android:text="0.0€"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNumEntradas"
+            android:layout_width="59dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="74dp"
+            android:fontFamily="@font/bebas_neue"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnRestar"
+            android:layout_width="74dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginEnd="178dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/restar" />
+
+        <ImageButton
+            android:id="@+id/btnSumar"
+            android:layout_width="74dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="179dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sumar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void configuracionCloudinary(){
-        configuracion.put("cloud_name", "");
-        configuracion.put("api_key", "");
-        configuracion.put("api_secret", "");
+        configuracion.put("cloud_name", "dbuxnwpd6");
+        configuracion.put("api_key", "978937442179642");
+        configuracion.put("api_secret", "7pZ942-NJNIyEwBRIgbvqaLuS0M");
         MediaManager.init(this, configuracion);
     }
 

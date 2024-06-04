@@ -59,6 +59,8 @@ public class EventosComprador extends AppCompatActivity {
 
     private void cargarEventos() throws SQLException {
         eventos = ed.obtenerEventosActivos();
+        for(Evento e: eventos){ if(e.getNumEntradas() == e.getEntradasVendidas()){ ed.cambiarEstadoEvento(e, false); } }
+        eventos = ed.obtenerEventosActivos();
     }
 
     public void lanzarCuenta(View v){

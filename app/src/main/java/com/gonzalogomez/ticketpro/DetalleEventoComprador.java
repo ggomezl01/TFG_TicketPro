@@ -1,6 +1,7 @@
 package com.gonzalogomez.ticketpro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class DetalleEventoComprador extends AppCompatActivity {
     Cuenta cuenta;
     ImageButton sumar, restar;
     Button comprar;
+    ConstraintLayout abierta, cerrada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,8 @@ public class DetalleEventoComprador extends AppCompatActivity {
         sumar = findViewById(R.id.btnSumar);
         restar = findViewById(R.id.btnRestar);
         comprar = findViewById(R.id.btnCesta);
+        abierta = findViewById(R.id.compraAbierta);
+        cerrada = findViewById(R.id.compraCerrada);
         rellenarEvento();
 
         sumar.setOnClickListener(view -> sumar());
@@ -64,6 +68,8 @@ public class DetalleEventoComprador extends AppCompatActivity {
         lugar.setText(evento.getLugar());
         fecha.setText(evento.getFecha());
         Glide.with(this).load(evento.getDirImagen()).into(imagen);
+        if(evento.getEntradasDisponibles()>0) { abierta.setVisibility(View.VISIBLE); }
+        else { cerrada.setVisibility(View.VISIBLE); }
     }
 
     private void guardarEnCesta() throws SQLException {
